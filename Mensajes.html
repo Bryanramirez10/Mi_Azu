@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mensajes en Estrellas</title>
+  <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+  <!-- Pantalla de inicio -->
+  <div id="start-screen">
+    <h2>Amorcito, toca las estrellas para ver los mensajitos</h2>
+    <button id="start-button">Ver Estrellas</button>
+  </div>
+  
+  <!-- Contenedor del cielo -->
+  <div id="sea"></div>
+
+  <!-- Contenedor del mensaje (oculto al inicio) -->
+  <div id="message-box" class="hidden">
+    <p id="message-content"></p>
+    <button id="close-message">Cerrar</button>
+  </div>
+
+  <!-- Audio de fondo --> 
+  <audio id="background-music" autoplay loop>
+    <source src="Melodia.mp3" type="audio/mp3">
+  </audio>
+
+  <script src="Mensajes.js"></script>
+</body>
+</html>
