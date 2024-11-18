@@ -75,12 +75,7 @@ const messageContainer = document.getElementById('message-box');
 const startScreen = document.getElementById('start-screen');
 let starIndex = 0;
 
-// Sonido de fondo
-const backgroundMusic = new Audio('Melodia.mp3');
-backgroundMusic.loop = true;
-backgroundMusic.play().catch((error) => {
-  console.log("El navegador bloqueó la reproducción automática:", error);
-});
+
 
 // Función para crear las estrellas
 function createStar(message) {
